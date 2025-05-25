@@ -116,7 +116,7 @@ jobs:
             
             cloudsmith mv --yes \
               ${{ env.CLOUDSMITH_NAMESPACE }}/${{ env.CLOUDSMITH_STAGING_REPO }}/$IDENTIFIER \
-              ${{ env.CLOUDSMITH_PRODUCTION_REPO }}
+              ${{ env.CLOUDSMITH_NAMESPACE }}/${{ env.CLOUDSMITH_PRODUCTION_REPO }}
             
             echo "Successfully promoted package: $IDENTIFIER"
           done

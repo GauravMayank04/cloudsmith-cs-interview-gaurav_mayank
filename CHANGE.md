@@ -72,4 +72,16 @@ cloudsmith mv --yes \
   ${{ env.CLOUDSMITH_NAMESPACE }}/${{ env.CLOUDSMITH_PRODUCTION_REPO }}
 ```
 
-Note: My staging repo name is - "gaurav-repo" and My production repo name is - "production"
+
+NOTES:-
+
+1> I have added project version and Path dynamically to fetch from init.py file.
+
+[project]
+name = "example_package"
+dynamic = ["version"]
+
+2> [tool.hatch.version]
+path = "src/example_package/__init__.py"
+ 
+3> My staging repo name is - "gaurav-repo" and My production repo name is - "production"

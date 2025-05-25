@@ -17,3 +17,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ] 
+
+[tool.hatch.version]
+path = "src/example_package/__init__.py"
